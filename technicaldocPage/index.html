@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Technical Documentation Page</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav id="navbar">
+        <header>Bootstrap Documentation</header>
+        <ul>
+            <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+            <li><a class="nav-link" href="#Quick_start">Quick Start</a></li>
+            <li><a class="nav-link" href="#CSS">CSS</a></li>
+            <li><a class="nav-link" href="#JS">JS</a></li>
+            <li><a class="nav-link" href="#Starter_template">Starter
+                    Template</a></li>
+            <li><a class="nav-link" href="#Important_globals">Important
+                    Globals</a></li>
+            <li><a class="nav-link" href="#HTML5_doctype">HTML5 doctype</a></li>
+            <li><a class="nav-link" href="#Responsive_meta_tag">Responsive
+                    meta tag</a></li>
+            <li><a class="nav-link" href="#Box_sizing">Box_sizing</a></li>
+            <li><a class="nav-link" href="#Compiled_css_and_js">Compiled CSS
+                    and JS</a></li>
+            <li><a class="nav-link" href="#Source_files">Source files</a></li>
+            <li><a class="nav-link" href="#BootstrapCDN">BootstrapCDN</a></li>
+            <li><a class="nav-link" href="#Package_managers">Package
+                    managers</a></li>
+            <li><a class="nav-link" href="#npm">npm</a></li>
+            <li><a class="nav-link" href="#yarn">yarn</a></li>
+            <li><a class="nav-link" href="#RubyGems">RubyGems</a></li>
+            <li><a class="nav-link" href="#Composer">Composer</a></li>
+            <li><a class="nav-link" href="#NuGet">NuGet</a></li>
+            <li><a class="nav-link" href="#Reboot">Reboot</a></li>
+            <li>
+                <a class="nav-link" href="#Reference">Reference</a>
+            </li>
+        </ul>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="Introduction">
+            <header>Introduction</header>
+            <article>
+                <p>Get started with Bootstrap, the world’s most popular framework for building responsive, mobile-first sites, with BootstrapCDN and a template starter page.</p>
+            </article>
+        </section>
+        <section class="main-section" id="Quick_start">
+            <header>Quick Start</header>
+            <article>
+                <p>Looking to quickly add Bootstrap to your project? Use BootstrapCDN, provided for free by the folks at StackPath. Using a package manager or need to download the source files? Head to the <a class="links" href="#Compiled_css_and_js">Compiled CSS and JS</a>                    section of the documentation.
+                </p>
+            </article>
+        </section>
+        <section class="main-section" id="CSS">
+            <header>CSS</header>
+            <article>
+                <p>Copy-paste the stylesheet link into your head before all other stylesheets to load our CSS.</p>
+                <code>&lt;link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"&gt;</code>
+            </article>
+        </section>
+        <section class="main-section" id="JS">
+            <header>JS</header>
+            <article>
+                <p>Many of Bootstrap's components require the use of JavaScript to function. Specifically, they require <a class="links" href="https://jquery.com/">jQuery</a>, <a class="links" href="https://popper.js.org/">Popper.js</a>, and their own JavaScript
+                    plugins. Place the following &lt;script&gt;s near the end of your pages, right before the closing &lt;/body&gt; tag, to enable them. jQuery must come first, then Popper.js, and then Bootstrap's JavaScript plugins.</p>
+
+                <p>Bootstrap use <a class="links" href="https://blog.jquery.com/2016/06/09/jquery-3-0-final-released/">jQuery’s slim build</a>, but the full version is also supported.</p>
+
+                <code>&lt;script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"&gt;&lt;/script&gt;&lt;script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"&gt;&lt;/script&gt;&lt;script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"&gt;&lt;/script&gt;</code>
+            </article>
+        </section>
+        <section class="main-section" id="Starter_template">
+            <header>Starter template</header>
+            <p>
+                Be sure to have your pages set up with the latest design and development standards. That means using an HTML5 doctype and including a viewport meta tag for proper responsive behaviors. Put it all together and your pages should look like this:
+            </p>
+            <code>
+                &lt;!doctype html&gt;
+                &lt;html lang="en"&gt;
+                  &lt;head&gt;
+                    <!-- Required meta tags -->
+                    &lt;meta charset="utf-8"&gt;
+                    &lt;meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"&gt;
+                
+                    <!-- Bootstrap CSS -->
+                    &lt;link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"&gt;
+                
+                    &lt;title&gt;Hello, world!&lt;/title&gt;
+                  &lt;/head&gt;
+                  &lt;body&gt;
+                    &lt;h1&gt;Hello, world!&lt;/h1&gt;
+                
+                    <!-- Optional JavaScript -->
+                    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+                    &lt;script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"&gt;&lt;/script&gt;
+                    &lt;script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"&gt;&lt;/script&gt;
+                    &lt;script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"&gt;&lt;/script&gt;
+                    &lt;/body&gt;
+                    &lt;/html&gt;
+                </code>
+        </section>
+        <section class="main-section" id="Important_globals">
+            <header>Important globals</header>
+            <article>
+                <p>Bootstrap employs a handful of important global styles and settings that you’ll need to be aware of when using it, all of which are almost exclusively geared towards the normalization of cross browser styles.</p>
+            </article>
+        </section>
+        <section class="main-section" id="HTML5_doctype">
+            <header>HTML5 doctype</header>
+            <article>
+                <p>Bootstrap requires the use of the HTML5 doctype. Without it, you’ll see some funky incomplete styling, but including it shouldn’t cause any considerable hiccups.</p>
+                <code>
+                &lt;!doctype html&gt;
+                &lt;html lang="en"&gt;
+                  ...
+                &lt;/html&gt;
+                </code>
+            </article>
+        </section>
+        <section class="main-section" id="Responsive_meta_tag">
+            <header>Responsive meta tag</header>
+            <article>
+                <p>Bootstrap is developed mobile first, a strategy in which we optimize code for mobile devices first and then scale up components as necessary using CSS media queries. To ensure proper rendering and touch zooming for all devices, <b>add the
+                responsive viewport meta tag</b> to your &lt;head&gt;.</p>
+                <code>&lt;meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"&gt;</code>
+            </article>
+        </section>
+        <section class="main-section" id="Box_sizing">
+            <header>Box_sizing</header>
+            <article>
+                <p>For more straightforward sizing in CSS, we switch the global box-sizing value from content-box to border-box. This ensures padding does not affect the final computed width of an element, but it can cause problems with some third party
+                    software like Google Maps and Google Custom Search Engine.</p>
+                On the rare occasion you need to override it, use something like the following:
+                <code>
+                  .selector-for-some-widget {
+                  box-sizing: content-box;
+                }</code>With the above snippet, nested elements—including generated content via ::before and ::after—will all inherit the specified box-sizing for that .selector-for-some-widget.
+                <p>Learn more about box model and sizing at <a class="links" href="https://css-tricks.com/box-sizing/">CSS Tricks.</a></p>
+            </article>
+        </section>
+        <section class="main-section" id="Compiled_css_and_js">
+            <header>Compiled CSS and JS</header>
+            <article>
+                <p>Download ready-to-use compiled code for <b>Bootstrap v4.3.1</b> to easily drop into your project, which includes:</p>
+                <ul>
+                    <li>Compiled and minified CSS bundles (see <a class="links" href="https://getbootstrap.com/docs/4.3/getting-started/contents/#css-files">CSS files comparison)</a></li>
+                    <li>Compiled and minified JavaScript plugins</li>
+                </ul>
+                <p>This doesn’t include documentation, source files, or any optional JavaScript dependencies (jQuery and Popper.js).</p>
+                <a class="btn" href="https://github.com/twbs/bootstrap/releases/download/v4.3.1/bootstrap-4.3.1-dist.zip">Download</a>
+            </article>
+        </section>
+        <section class="main-section" id="Source_files">
+            <header>Source files</header>
+            <article>
+                Compile Bootstrap with your own asset pipeline by downloading Bootstrap's source Sass, JavaScript, and documentation files. This option requires some additional tooling:
+                <ul>
+                    <li>Sass compiler (Libsass or Ruby Sass is supported) for compiling your CSS.</li>
+                    <li> <a class="links" href="https://github.com/postcss/autoprefixer">Autoprefixer</a> for CSS vendor prefixing</li>
+                </ul>
+                Should you require <a class="links" href="https://getbootstrap.com/docs/4.3/getting-started/build-tools/#tooling-setup">build tools</a>, they are included for developing Bootstrap and its docs, but they’re likely unsuitable for your own
+                purposes.
+                <p><a class="btn" href="https://github.com/twbs/bootstrap/archive/v4.3.1.zip">Download source</a></p>
+            </article>
+        </section>
+        <section class="main-section" id="BootstrapCDN">
+            <header>BootstrapCDN</header>
+            <article>
+                Skip the download with <a class="links" href="https://www.bootstrapcdn.com/">BootstrapCDN</a> to deliver cached version of Bootstrap’s compiled CSS and JS to your project.
+                <code>
+                    &lt;link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"&gt;
+                    &lt;script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"&gt;&lt;/script&gt;
+                </code>If you’re using our compiled JavaScript, don’t forget to include CDN versions of jQuery and Popper.js before it.
+                <code>
+                    &lt;script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"&gt;&lt;/script&gt;
+                    &lt;script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"&gt;&lt;/script&gt;
+                </code>
+            </article>
+        </section>
+        <section class="main-section" id="Package_managers">
+            <header>Package managers</header>
+            <article>
+                Pull in Bootstrap’s <b>source files</b> into nearly any project with some of the most popular package managers. No matter the package manager, Bootstrap will <b>require a Sass compiler and Autoprefixer</b> for a setup that matches our
+                official compiled versions.
+            </article>
+        </section>
+        <section class="main-section" id="npm">
+            <header>npm</header>
+            <article>
+                Install Bootstrap in your Node.js powered apps with the <a class="links" href="https://www.npmjs.com/package/bootstrap">npm package</a> :
+                <code>
+                   $ npm install bootstrap
+                </code>require('bootstrap') will load all of Bootstrap’s jQuery plugins onto the jQuery object. The bootstrap module itself does not export anything. You can manually load Bootstrap’s jQuery plugins individually by loading
+                the /js/*.js files under the package’s top-level directory.
+                <p>Bootstrap’s package.json contains some additional metadata under the following keys:</p>
+                <ul>
+                    <li>sass - path to Bootstrap’s main <a class="links" href="https://sass-lang.com/">Sass</a> source file</li>
+                    <li>style - path to Bootstrap’s non-minified CSS that’s been precompiled using the default settings (no customization)</li>
+                </ul>
+            </article>
+        </section>
+        <section class="main-section" id="yarn">
+            <header>yarn</header>
+            <article>
+                Install Bootstrap in your Node.js powered apps with <a class="links" href="https://yarnpkg.com/en/package/yarn">the yarn package</a> :
+                <code>
+                   $ yarn add bootstrap
+                </code>
+            </article>
+        </section>
+        <section class="main-section" id="RubyGems">
+            <header>RubyGems</header>
+            <article>
+                Install Bootstrap in your Ruby apps using <a class="links" href="https://bundler.io/">Bundler</a> (<b>recommended</b>) and <a class="links" href="https://rubygems.org/">RubyGems</a> by adding the following line to your Gemfile:
+                <code>
+                gem 'bootstrap', '~&gt; 4.3.1' 
+            </code>Alternatively, if you’re not using Bundler, you can install the gem by running this command:
+                <code>
+               $ gem install bootstrap -v 4.3.1 
+            </code>See the gem’s <a class="links" href="https://github.com/twbs/bootstrap-rubygem/blob/master/README.md">README</a> for further details.
+            </article>
+        </section>
+        <section class="main-section" id="Composer">
+            <header>Composer</header>
+            <article>
+                You can also install and manage Bootstrap’s Sass and JavaScript using
+                <a class="links" href="https://getcomposer.org/">Composer</a>:
+                <code>
+                  $ composer require twbs/bootstrap:4.3.1 
+                </code>
+            </article>
+        </section>
+        <section class="main-section" id="NuGet">
+            <header>NuGet</header>
+            <article>
+                If you develop in .NET, you can also install and manage Bootstrap’s <a class="links" href="https://www.nuget.org/packages/bootstrap/">CSS</a> or <a class="links" href="https://www.nuget.org/packages/bootstrap.sass/">Sass</a> and JavaScript
+                using <a class="links" href="https://www.nuget.org/">NuGet</a>:
+                <code>
+                  PM&gt; Install-Package bootstrap
+                </code>
+                <code>
+                  PM&gt; Install-Package bootstrap.sass
+                </code>
+            </article>
+        </section>
+        <section class="main-section" id="Reboot">
+            <header>Reboot</header>
+            <article>
+                For improved cross-browser rendering, we use Reboot to correct inconsistencies across browsers and devices while providing slightly more opinionated resets to common HTML elements.
+            </article>
+        </section>
+        <section class="main-section" id="Reference">
+            <header>Reference</header>
+            <article>
+                <ul>
+                    <li>All documentation from this page is resourced from <a class="links" href="https://getbootstrap.com/">Bootstrap</a>.</li>
+                </ul>
+            </article>
+        </section>
+    </main>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>

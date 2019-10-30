@@ -1,3 +1,3 @@
 # freecodecamp-certification
 
-These are the webpages I've designed while taking the `freecodecamp` certification courses.
+These are the webpages I've designed while taking the _freecodecamp_ certification courses.
